@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-12 -12 88 88" width="64" height="64" role="img" aria-label="Загрузка">
+  <style>
+    .strand { fill: none; stroke: #222; stroke-width: 5.8; stroke-linecap: round; stroke-linejoin: round; }
+    .a { transform-origin: 29px 28px; animation: left 3.6s ease-in-out infinite; }
+    .b { transform-origin: 33px 32px; animation: right 3.6s ease-in-out infinite; }
+    @keyframes left {
+      0%, 8% { transform: translateX(0) rotate(0deg); }
+      19% { transform: translateX(-13px) rotate(60deg); }
+      38% { transform: translateX(-13px) rotate(300deg); }
+      48%, 100% { transform: translateX(0) rotate(360deg); }
+    }
+    @keyframes right {
+      0%, 48% { transform: translateX(0) rotate(0deg); }
+      59% { transform: translateX(13px) rotate(-60deg); }
+      78% { transform: translateX(13px) rotate(-300deg); }
+      90%, 100% { transform: translateX(0) rotate(-360deg); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .a, .b { animation: none; }
+    }
+  </style>
+  <path class="strand a" d="M18 48 C11 43 15 34 22 30 C29 26 36 27 43 19 C47 15 46 10 43 8"/>
+  <path class="strand b" d="M19 16 C24 20 28 27 34 34 C39 40 42 46 47 48"/>
+</svg>
